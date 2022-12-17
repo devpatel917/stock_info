@@ -7,11 +7,15 @@ In this project, we will display news headlines and price movements of a particu
 Input: 
 
 *Ticker Symbol
+
 *End Date
+
 *Start Date
 
 Output: 
 
 *Time Series plot of stock prices
+
 *Predicted stock prices 
+
 *News headlines of stock
