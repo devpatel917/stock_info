@@ -44,11 +44,13 @@ def main():
     st.title('Stock Info App')
     st.subheader("Enter Parameters")
     with st.form(key='form1'):
+        #Display parameters
         ticker = st.text_input("Stock (Enter Ticker Symbol)")
         START_DATE = st.text_input("Enter Start Date:")
         END_DATE = st.text_input("Enter End Date:")
         submit_button = st.form_submit_button(label = "Retrieve Stock Info")
     if submit_button:
+        #Retrieve and display Price movements and news headlines
         prices(ticker, START_DATE, END_DATE)
         news(ticker, START_DATE, END_DATE)
 
